@@ -52,7 +52,7 @@ public class LinkedBlockingQueueTest<T> {
 
     private final int capacity;
 
-    private volatile AtomicInteger count = new AtomicInteger(0);
+    private  AtomicInteger count = new AtomicInteger(0);
 
     class Node<T>{
 
