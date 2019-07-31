@@ -1,5 +1,7 @@
 package com.clark.lu.demo.algorithm;
 
+import com.clark.lu.demo.structure.ListNode;
+
 /**
  * created by LuChang
  * 2019/6/12 16:29
@@ -55,25 +57,4 @@ public class ListNodeAdd {
         return result;
     }
 
-    static class ListNode{
-        int val;
-
-        ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        @Override
-        public String toString() {
-            StringBuffer s = new StringBuffer();
-            s.append(val);
-            ListNode temp = next;
-            while (temp != null){
-                s.append(temp.val);
-                temp = temp.next;
-            }
-            return s.toString();
-        }
-    }
 }
