@@ -28,9 +28,11 @@ public class BackTrack {
            for (int i = 0; i < nums.length; i++) {
                if (!tempList.contains(nums[i])){
                    tempList.add(nums[i]);
+                   //递归调用，增加新元素
                    backTrack(list,tempList,nums);
                    System.out.println(tempList);
                    System.out.println("remove " + tempList.get(tempList.size() - 1));
+                   //递归调用返回之后，减掉最后一个元素，回到上一个根节点，继续递归调用
                    tempList.remove(tempList.size()-1);
                    System.out.println(tempList);
                }
