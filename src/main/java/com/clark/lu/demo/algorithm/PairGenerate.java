@@ -29,7 +29,7 @@ public class PairGenerate {
     }
 
     public static void main(String[] args) {
-        List<List<Pair>> lists = generatePair(6);
+        List<List<Pair>> lists = generatePair(10);
         lists.forEach(list -> {
             list.forEach(pair -> System.out.println(pair));
             System.out.println("=========================");
